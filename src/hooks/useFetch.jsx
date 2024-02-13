@@ -1,7 +1,7 @@
-import React,{ useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { fetchDataFromAPi } from "../utils/Api";
 
-const useFetch = (url) => {
+const useFetch = url => {
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(null);
   const [error, setError] = useState(null);
@@ -12,11 +12,11 @@ const useFetch = (url) => {
     setError(null);
 
     fetchDataFromAPi(url)
-      .then((res) => {
+      .then(res => {
         setLoading(false);
         setData(res);
       })
-      .catch((err) => {
+      .catch(err => {
         setLoading(false);
         setError("Something went wrong!");
       });

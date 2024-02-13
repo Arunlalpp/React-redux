@@ -16,14 +16,14 @@ import PageNotFound from "./pages/404/PageNotFound";
 
 function App() {
   const dispatch = useDispatch();
-  const { url } = useSelector((state) => state.home);
+  const { url } = useSelector(state => state.home);
 
   useEffect(() => {
     fetchApiConfig();
   }, []);
 
   const fetchApiConfig = () => {
-    fetchDataFromAPi("/configuration").then((res) => {
+    fetchDataFromAPi("/configuration").then(res => {
       console.log(res);
       const url = {
         backdrop: res.images.secure_base_url + "original",
