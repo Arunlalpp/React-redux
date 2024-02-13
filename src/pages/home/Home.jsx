@@ -1,10 +1,10 @@
 import React from 'react'
-import HomeBanner from './homeBanner/HomeBanner'
+import HeroBanner from './heroBanner/HeroBanner'
 
 function Home() {
   return (
     <div className='home page'>
-      <HomeBanner />
+      <HeroBanner />
     </div>
   )
 }
