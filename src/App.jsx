@@ -23,7 +23,6 @@ function App() {
 
   const fetchApiConfig = () => {
     fetchDataFromAPi("/configuration").then(res => {
-      console.log(res);
       const url = {
         backdrop: res.images.secure_base_url + "original",
         poster: res.images.secure_base_url + "original",
@@ -33,7 +32,7 @@ function App() {
     });
   };
   return (
-    <BrowserRouter>
+   <BrowserRouter>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -42,7 +41,7 @@ function App() {
         <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      {/* <Footer /> */}
+      <Footer />
     </BrowserRouter>
   );
 }

@@ -1,3 +1,3 @@
-module.exports = {
-  arrowParens: "avoid",
-};
+// module.exports = {
+//   arrowParens: "avoid",
+// };
