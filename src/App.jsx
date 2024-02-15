@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 import React from "react";
 import { useEffect } from "react";
 import { fetchDataFromAPi } from "./utils/Api";
@@ -43,7 +42,7 @@ function App() {
         <Route path="/explore/:mediaType" element={<Explore />} />
         <Route path="*" element={<PageNotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
