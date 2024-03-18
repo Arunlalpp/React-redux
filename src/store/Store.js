@@ -3,4 +3,5 @@ import HomeSlice from "./HomeSlice";
 
 export const store = configureStore({
   reducer: { home: HomeSlice },
+  
 });
